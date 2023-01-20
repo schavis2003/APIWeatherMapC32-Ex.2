@@ -17,7 +17,7 @@ public class Program
 
         var zipCode = Console.ReadLine();
 
-        var apiCall = $"https://api.openweathermap.org/data/2.5/weather?{zipCode}&units=imperial&appid={APIKey}";
+        var apiCall = $"https://api.openweathermap.org/data/2.5/weather?zip={zipCode}&units=imperial&appid={APIKey}";
         Console.WriteLine();
 
         Console.WriteLine($"It is currently  {WeatherMap.GetTemp(apiCall)} degrees F in your location.");
